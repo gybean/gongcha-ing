@@ -24,18 +24,25 @@ h1 {
 
 .section .inner .title h3 {
     font-family: "Cormorant", serif;
-    font-size: 30px;
+    font-size: 56px;
     font-weight: 600;
 }
 
 .section .inner .title p {
-    margin-top: 20px;
-    opacity: 0.7;
+    margin-top: 16px;
     font-family: 'Noto Sans KR';
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.6;
 }
+
+.btn {
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: "Cormorant", serif;
+    display: block;
+}
+
 
 
 
@@ -113,3 +120,123 @@ h1 {
 
 
 /* section-01 */
+.section-01 .inner .sec01Swiper {
+    margin-top: 56px;
+}
+
+.section-01 .inner .sec01Swiper .swiper-slide {
+    cursor: pointer;
+    padding: 40px;
+    background-color: #f5eee8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    transition: all 0.3s;
+}
+.section-01 .inner .sec01Swiper .swiper-slide:hover {
+    background-color: rgb(245, 238, 232, 0.5);
+}
+.section-01 .inner .sec01Swiper .swiper-slide img {
+    width: 100%;
+}
+.section-01 .inner .sec01Swiper .swiper-slide .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* section-02 */
+.section-02 .inner .title h3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.section-02 .inner .title h3 .tap {
+    display: flex;
+    gap: 12px;
+}
+
+.section-02 .inner .title h3 .tap li {
+    cursor: pointer;
+    padding: 0 16px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.section-02 .inner .title h3 .tap li:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.section-02 .inner .image_wrap {
+    margin-top: 56px;
+    width: 100%;
+}
+.section-02 .inner .image_wrap li {
+    overflow: hidden;
+    border-radius: 12px;
+    width: 100%;
+    position: relative;
+}
+.section-02 .inner .image_wrap li .image {
+    width: 100%;
+}
+.section-02 .inner .image_wrap li .image img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    display: block;
+}
+.section-02 .inner .image_wrap li .text {
+    padding: 56px;
+    background-color: rgb(51, 51, 51, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.section-02 .inner .image_wrap li .text p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.section-02 .inner .image_wrap li .text span {
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.section-02 .inner .image_wrap li .text .btn b {
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.section-02 .inner .image_wrap li .text .btn b::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.section-02 .inner .image_wrap li .text .btn:hover b::after {
+    width: 100%;
+}
